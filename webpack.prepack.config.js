@@ -2,10 +2,10 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    worker: './src/browser/src/worker.js',
+    worker:__dirname +  '/src/browser/src/worker.js',
   },
   output: {
-    path: './src/browser',
+    path: __dirname + '/src/browser',
     filename: 'worker.min.js'
   },
   plugins: [

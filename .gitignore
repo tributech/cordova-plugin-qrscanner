@@ -6,6 +6,9 @@ npm-debug.log*
 # Dependency directories
 node_modules/
 
+# IDE
+.idea
+
 # generated files
 dist/
 src/browser/plugin.min.js

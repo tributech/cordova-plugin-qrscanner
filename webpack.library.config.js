@@ -3,10 +3,10 @@ const webpack = require('webpack');
 module.exports = {
   devtool: 'source-map',
   entry: {
-    library: './src/browser/src/library.js'
+    library: __dirname + '/src/browser/src/library.js'
   },
   output: {
-      path: './dist',
+      path: __dirname + '/dist',
       filename: 'cordova-plugin-qrscanner-lib.min.js',
       library: 'QRScanner',
       libraryTarget: 'umd',

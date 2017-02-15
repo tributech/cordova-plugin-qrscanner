@@ -2,11 +2,11 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    plugin: './src/browser/src/cordova-plugin.js',
-    www: './src/common/src/cordova-www.js'
+    plugin: __dirname + '/src/browser/src/cordova-plugin.js',
+    www: __dirname + '/src/common/src/cordova-www.js'
   },
   output: {
-    path: './dist',
+    path: __dirname + '/dist',
     filename: '[name].min.js'
   },
   externals: {
